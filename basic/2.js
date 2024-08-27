@@ -1,3 +1,6 @@
+//for js task
+
+
 let q="hello Media"
 console.log(q)
 
