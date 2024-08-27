@@ -1,4 +1,5 @@
 //for js task
+//basic implementaation for the javascript
 
 
 let q="hello Media"
