@@ -27,6 +27,16 @@ for(i=0;i<=a.length;i++)
 }
 console.log("end of the loop")
 
+/task 
+let p =prompt("enter the number")
+if(a%2===0){
+    console.log("number is multiple of 2");
+}
+else{
+    console.log("not multiple of 2");
+}
+
+
 //keep guessing the numbere until it is correct 
 let user=20;
 let guess=prompt("guess the correct number");
