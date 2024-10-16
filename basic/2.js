@@ -28,5 +28,12 @@ for(i=0;i<=a.length;i++)
 console.log("end of the loop")
 
 
-//
+let user=20;
+let guess=prompt("guess the correct number");
+while(guess != user){
+    let guess=prompt("keep guessing the correct number");
+    console.log(guesss);
+}
+console.log("you have guessed the correct number");
+
  
