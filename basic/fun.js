@@ -49,3 +49,14 @@ let arrowf=(a,b)=>{
 
 let p=arrowf(4,5);
 console.log(p)
+
+
+
+//use of foreach loop
+let value=[2,3,4,5]
+value.forEach(function printval(val){
+   console.log(val*val)
+
+
+
+});
