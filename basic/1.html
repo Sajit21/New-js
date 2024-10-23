@@ -5,10 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script src="fun.js"></script>
 <body>
     <p>hello people</p>
-    <p>starting of the javascript </p>
-    <p>basic in javascript </p>
+    <form action="1.html"  method="post"   onsubmit="return validationform()">
+        <fieldset>
+            <label for="name">Name: </label>
+            <input type="text" name="Uname" id="Uname"><br><br>
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass"><br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="mail" id="mail"><br><br>
+            <label for="country">Country: </label>
+            <select name="country" id="country" >
+                <option value="nepal">Nepal</option>
+                <option value="usa">USA</option>
+                <option value="canada">canada</option>
+            </select><br><br>
+            <label for="gender" id="gender">Gender: </label>
+            <input type="radio" name="gender"  value="male" >Male
+            <input type="radio" name="gender" value="female">Female<br><br>
+           <button type="submit" name="submit">Submit</button>
+
+        </fieldset>
+    </form>
 </body>
-<script src="2.js"></script>
+
+<!-- <script src="fun.js"></script> -->
+ <script>
+    function validationform()
+{
+        let nam=document.getElementById("Uname").value;
+        let pas=document.getElementById("pass").value;
+        // let gen=document.getElementById("gender").checked;
+        let gen = document.querySelector('input[name="gender"]:checked');
+
+        let coun=document.getElementById("country").value;
+
+        if(nam==0)
+    {
+        alert("please insert the full name");
+        return false;
+    }
+        if(!pas)
+    {
+        alert("password cannot be empty");
+        return false;
+    }
+    if(!gen)
+    {
+        alert("choose a gender");
+        return false;
+    }
+    if(!coun)
+    {
+        alert("choose your country")
+        return false;
+    }
+    return true;
+}
+    
+ </script>
 </html>
