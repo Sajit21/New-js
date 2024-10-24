@@ -4,7 +4,7 @@ document.getElementById("one").innerHTML="ramlal";
 let hari=document.getElementById("one").innerHTML;
 console.log(hari)
 
-//3div with common class name box
+//3div with common class name box //use of forof loop to access all the box classes
 let hell=document.getElementsByClassName("box");
 let idx=1;
 for( let div of hell){
