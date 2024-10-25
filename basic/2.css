@@ -46,4 +46,16 @@ h1{
 
 }
 
+/* /ptag of content */
+.ptag{
+    background-color: red;
+    color: blue;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+}
+.pnew{
+    background-color: aqua;
+}
+
 
