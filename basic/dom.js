@@ -23,8 +23,34 @@ let but=document.getElementsByClassName("oho");
 but[0].append(btn);
 
 
+//create a newbutton element.give it a text "click me" with background color of red and text color of white 
+//then insert the button as the first element inside the body tag
+
+  let par=document.createElement("button")
+  par.innerText="click me";
+  par.style.backgroundColor="red";
+  par.style.color="white"; //style content add in the js
+
+  
+  console.log(par)
+//.button create bho
 
 
+let yee=document.querySelector("body"); //body access gareko directly 
+yee.prepend(par)
+
+
+
+
+
+
+//use of the classlist incase we can add new class to the previous class without overriding
+let para=document.getElementsByClassName("ptag");
+console.log(para[0])
+
+
+para[0].classList.add("pnew")  //classname access garda []kun child lai access garni denote garna parcha
+//class dherai hunchan same name ko so
 
 // console.dir(hell.innertext);
 // hell.innertext=hell.innertext + `this is not a useful thing`
