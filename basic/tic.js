@@ -1,7 +1,9 @@
 let bot1=document.querySelector(".bot");
 let graph1=document.querySelector(".graph");
 let boxes=document.querySelectorAll(".box"); //sabai box select garna selectorall use garni
-
+let new1=document.querySelector(".newgame");
+let new2=document.querySelector(".container");
+let new3=document.querySelector(".msg");
 let Wpattern=[
     [0,1,2],
     [3,4,5],
@@ -33,6 +35,16 @@ boxes.forEach((box) => {
     })  
 });
 
+
+
+
+
+
+let showWinner=(winner)=>{
+    new3.innerText=`congrats the winner is ${winner}`;
+    new2.classList.remove("hide")
+
+}
 //pattern correct cha ki chaina check garni
 let checkwinner=()=>{
 for(let pattern of Wpattern){
@@ -47,8 +59,12 @@ for(let pattern of Wpattern){
     if(pat1val!="" && pat2val!="" && pat3val!="")
         if(pat1val===pat2val && pat2val===pat3val )
         {
-            console.log("congrats you are the winner");
+            console.log("congrats you are the winner",pat1val);
+        
+            showWinner(pat1val);
         }
+
+      
         
 
 }};
