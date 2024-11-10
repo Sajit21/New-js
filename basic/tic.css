@@ -40,3 +40,42 @@ body{
       
 }
 
+.container{
+    height: 20vmin;
+    padding: 1rem;;
+    display: flex;
+flex-direction: column;    justify-content: center;
+    align-items: center;
+    gap:5vmin;
+}
+.hide{
+    display: none; 
+    /* hide them */
+}
+.msg{
+    font-size: 50px;
+    color:blueviolet;
+
+
+}
+.newgame{
+    height:15vmin;
+    width: 20vmin;
+    font-size: 20px;
+    color: blueviolet;
+    background-color: yellow;
+}
+
+
+.rere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reset{
+   height: 9vmin;
+   width: 20vmin;
+   background-color: yellow;
+   color: blueviolet;
+   font-size: 20px;
+}
