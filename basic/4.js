@@ -54,3 +54,44 @@ sleep(){
 let hami= new doctor("goldstar");
 console.log(hami)
 
+
+
+
+//fetching data only if the first data have been fetched
+function newmew1(){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("for new data")
+        // if(datamew)
+        // {
+        //     datamew()
+        // }
+        resolve("some issuse in the process")
+    },3000)
+})
+}
+
+function newmew2(){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("for new data2",)
+        // if(datamew)
+        // {
+        //     datamew()
+        // }
+        resolve("some issuse in the process")
+    },6000)
+})
+}
+
+
+console.log("fetching the first data")
+let part= newmew1()
+part.then((rem)=>{
+    console.log(rem)
+    console.log("fetching the second data")
+    let part2=newmew2()
+    part2.then((res)=>{
+        console.log(res)
+    })
+})
