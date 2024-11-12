@@ -95,3 +95,18 @@ part.then((rem)=>{
         console.log(res)
     })
 })
+
+
+/ //storing 
+// localStorage.setItem('name','ram') //store into local storage of window with key and value
+
+
+// //to get from local storage
+// let pam=localStorage.getItem('name')
+
+// //to update
+// localStorage.setItem('name','shyam') 
+
+// //to 
+// localStorage.removeItem('name') 
+
